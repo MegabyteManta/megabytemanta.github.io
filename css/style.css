@@ -438,14 +438,22 @@ textarea {
     margin-top: 5rem;
     text-align: center; }
 
+.project-details {
+    background: rgb(51, 51, 51);
+}
+
 .project-details__content {
   padding: 8rem 0;
   max-width: 90rem;
-  margin: auto; }
+  margin: auto; 
+  background: rgb(51, 51, 51);
+}
   .project-details__content-title {
     font-weight: 700;
     font-size: 2.8rem;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    color: #fff;
+  }
     @media only screen and (max-width: 37.5em) {
       .project-details__content-title {
         font-size: 2.4rem; } }
@@ -467,7 +475,7 @@ textarea {
   .project-details__desc-para {
     font-size: 1.8rem;
     line-height: 1.7;
-    color: grey;
+    color: rgb(191, 191, 191);
     margin-bottom: 2rem; }
 
 .project-details__tools-used {
