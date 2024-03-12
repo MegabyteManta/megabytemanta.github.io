@@ -902,3 +902,8 @@ textarea {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.button-container {
+  display: flex;
+  gap: 5px;
+}
