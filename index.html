@@ -36,6 +36,11 @@
             <li class="header__link-wrapper">
               <a href="./index.html#about" class="header__link">About </a>
             </li>
+              <li class="header__link-wrapper">
+                  <a href="./index.html#work" class="header__link">
+                      Work Experience
+                  </a>
+              </li>
             <li class="header__link-wrapper">
               <a href="./index.html#projects" class="header__link">
                 Projects
@@ -90,7 +95,12 @@
             </p>
         </div>
         <div class="home-hero__cta">
-          <a href="./index.html#projects" class="btn btn--bg">Projects</a>
+            <div class="button-container">
+            <a href="./index.html#about" class="btn btn--bg">About</a>
+                <a href="./index.html#work" class="btn btn--bg">Work Experience</a>
+                <a href="./index.html#projects" class="btn btn--bg">Projects</a>
+            </div>
+
         </div>
       </div>
       <div class="home-hero__socials">
@@ -150,10 +160,10 @@
     <section id="about" class="about sec-pad">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main">About Me</span>
-          <span class="heading-sec__sub">
-            Learn more about my gameplay programming experience, and download my resume
-          </span>
+          <span class="heading-sec__main">About</span>
+<!--          <span class="heading-sec__sub">-->
+<!--            Learn more about my gameplay programming experience, and download my resume.-->
+<!--          </span>-->
         </h2>
         <div class="about__content">
           <div class="about__content-main">
@@ -175,8 +185,8 @@
                 </p>
                     -->
                 <p class="about__content-details-para">
-                    I'm a dedicated <strong>Unreal Engine</strong> and <strong>C++ Gameplay Engineer</strong> with years of experience in
-                    the gaming industry. Currently contributing expertise to an undisclosed company
+                    I'm a dedicated <strong>Unreal Engine</strong> and <strong>C++ Gameplay Engineer</strong> with over <strong>5 years of experience</strong> in
+                    the gaming industry. Currently contributing expertise to <strong>Crowbar Collective</strong>, the studio that released <strong>Black Mesa</strong>,
                     on an eagerly anticipated <strong>first-person shooter</strong> game. Specialized in the design
                     and implementation of robust <strong>multiplayer systems</strong>, <strong>networking solutions</strong>, and
                     <strong>optimization techniques</strong> to deliver seamless and engaging player experiences.
@@ -206,7 +216,7 @@
             <!--<a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
               >Contact</a
             >-->
-            <a href="Greg_Peterson_Gameplay_Programmer_Resume.pdf" download class="btn btn--med btn--theme dynamicBgClr">
+            <a target="_blank" href="Greg_Peterson_Gameplay_Programmer_Resume.pdf" download class="btn btn--med btn--theme dynamicBgClr">
                 Download Resume
             </a>
 
@@ -244,10 +254,10 @@
                       The Collaborative Learning Environments in Virtual Reality (CLEVR) project is designed to create immersive virtual reality learning experiences that can be used in today’s classrooms. 
                   </p>
                   <div class="button-container">
-                      <a href="https://education.mit.edu/project/clevr/" download class="btn btn--med btn--theme dynamicBgClr">
+                      <a target=_self href="https://education.mit.edu/project/clevr/" download class="btn btn--med btn--theme dynamicBgClr">
                           Project Link
                       </a>
-                      <a href="Greg_Peterson_Gameplay_Programmer_Resume.pdf" download class="btn btn--med btn--theme dynamicBgClr">
+                      <a target=_self href="./CLEVR.html" download class="btn btn--med btn--theme dynamicBgClr">
                           Read More
                       </a>
                   </div>
@@ -257,13 +267,73 @@
         </div>
       </div>
     </section>
-    <section id="projects" class="projects sec-pad">
+    <section id="work" class="projects sec-pad">
+        <div class="main-container">
+            <h2 class="heading heading-sec heading-sec__mb-bg">
+                <span class="heading-sec__main">Work Experience</span>
+<!--                <span class="heading-sec__sub">-->
+<!--              Learn more about the work .-->
+<!--          </span>-->
+            </h2>
+
+            <div class="projects__content">
+                <div class="projects__row">
+                    <div class="projects__row-img-cont">
+                        <!--              <img-->
+                        <!--                src="./assets/jpeg/project-mockup-example.jpeg"-->
+                        <!--                alt="Software Screenshot"-->
+                        <!--                class="projects__row-img"-->
+                        <!--                loading="lazy"-->
+                        <!--              />-->
+                        <video style="width:100%" controls>
+                            <source src="./assets/CC/CC.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="projects__row-content">
+                        <h3 class="projects__row-content-title">Crowbar Collective's Eagerly Awaited New Title</h3>
+                        <p class="projects__row-content-desc">
+                            Learn about my current position as an Unreal Engine and C++ Gameplay Engineer.
+                        </p>
+                        <a target=_self
+                           href="./CC.html"
+                           class="btn btn--med btn--theme dynamicBgClr"
+                           target="_self"
+                        >Read More</a
+                        >
+                    </div>
+                </div>
+                <div class="projects__row">
+                    <div class="projects__row-img-cont">
+                        <video style="width:100%" controls>
+                            <source src="./assets/Clevr/Clevr-slamm.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="projects__row-content">
+                        <h3 class="projects__row-content-title">CLEVR: Collaborative Learning Environments in Virtual Reality</h3>
+                        <p class="projects__row-content-desc">
+                            Learn about my first shipped title and my work as gameplay engineer
+                            for the MIT GameLab.
+                        </p>
+                        <a
+                                href="./CLEVR.html"
+                                class="btn btn--med btn--theme dynamicBgClr"
+                                target="_self"
+                        >Read More</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="about sec-pad">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-bg">
           <span class="heading-sec__main">Projects</span>
-          <span class="heading-sec__sub">
-              Learn more about the cool mechanics and systems I've been working on
-          </span>
+<!--          <span class="heading-sec__sub">-->
+<!--              Learn more about the cool mechanics and systems I've been working on-->
+<!--          </span>-->
         </h2>
 
         <div class="projects__content">
@@ -283,13 +353,12 @@
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">Chicken Game</h3>
               <p class="projects__row-content-desc">
-                Discover the secrets of the Chicken Farm while playing 
-                this spin on a clicker game.
+                Learn about the development of my game and the tools I used to make it in 2 weeks.
               </p>
               <a
-                href="./project-1.html"
+                href="./ChickenGame.html"
                 class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
+                target="_self"
                 >Read More</a
               >
             </div>
@@ -313,9 +382,9 @@
                 Unreal Engine 
               </p>
               <a
-                href="./project-2.html"
+                href="./Boids.html"
                 class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
+                target="_self"
                 >Read More</a
               >
             </div>
@@ -335,35 +404,13 @@
                 praesentium.
               </p>
               <a
-                href="./project-3.html"
+                href="./ActorHunt.html"
                 class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
+                target="_self"
                 >Read More</a
               >
             </div>
           </div>
-            <div class="projects__row">
-                <div class="projects__row-img-cont">
-                    <video style="width:100%" controls>
-                        <source src="./assets/Clevr/Clevr-slamm.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="projects__row-content">
-                    <h3 class="projects__row-content-title">CLEVR: Collaborative Learning Environments in Virtual Reality</h3>
-                    <p class="projects__row-content-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                        facilis tempora, explicabo quae quod deserunt eius sapiente
-                        praesentium.
-                    </p>
-                    <a
-                            href="./project-4.html"
-                            class="btn btn--med btn--theme dynamicBgClr"
-                            target="_blank"
-                    >Read More</a
-                    >
-                </div>
-            </div>
         </div>
       </div>
     </section>
@@ -427,14 +474,14 @@
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/greggiov">
+              <a target="_self" rel="noreferrer" href="https://linkedin.com/in/greggiov">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/linkedin-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="https://github.com/megabytemanta">
+              <a target="_self" rel="noreferrer" href="https://github.com/megabytemanta">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/github-ico.png"
@@ -474,10 +521,7 @@
 
         <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
         <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
+          &copy; Copyright 2021. Made by Ram Maheshwari
         </div>
       </div>
     </footer>
