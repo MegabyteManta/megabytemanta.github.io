@@ -322,7 +322,7 @@ textarea {
           font-size: 2.4rem; } }
     .projects__row-content-desc {
       font-size: 1.8rem;
-      color: grey;
+      color: rgba(175, 175, 175, 1);
       max-width: 60rem;
       line-height: 1.7;
       margin-bottom: 3rem; }
@@ -908,5 +908,10 @@ textarea {
   gap: 5px;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+.button-container2 {
+  display: flex;
+  gap: 5px;
   flex-wrap: wrap;
 }
