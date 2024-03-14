@@ -32,18 +32,18 @@
         <div class="header__main">
           <ul class="header__links">
             <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
+              <a href="./" class="header__link"> Home </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
+              <a href="./#about" class="header__link">About </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
+              <a href="./#projects" class="header__link">
                 Projects
               </a>
             </li>
             <li class="header__link-wrapper" hidden>
-              <a href="./index.html#contact" class="header__link"> Contact </a>
+              <a href="./#contact" class="header__link"> Contact </a>
             </li>
           </ul>
           <div class="header__main-ham-menu-cont">
@@ -64,23 +64,23 @@
         <div class="header__sm-menu-content">
           <ul class="header__sm-menu-links">
             <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
+              <a href="./"> Home </a>
             </li>
 
             <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
+              <a href="./#about"> About </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#work" class="header__link">
+              <a href="./#work" class="header__link">
                 Work Experience
               </a>
             </li>
             <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
+              <a href="./#projects"> Projects </a>
             </li>
 
             <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
+              <a href="./#contact"> Contact </a>
             </li>
           </ul>
         </div>
@@ -91,9 +91,7 @@
         <h1 class="heading-primary">Boids</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            in numquam incidunt earum quaerat cum fuga, atque similique natus
-            nobis sit.
+            A plugin to simulate the movement pattern of flocking birds.
           </p>
         </div>
         <div class="project-cs-hero__cta">
@@ -111,40 +109,47 @@
             </video>
           </div>
           <div class="project-details__content-main">
-            <div class="project-details__desc">
+            <div class="project-details">
               <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Neque alias tenetur minus quaerat
-                aliquid, aut provident blanditiis, deleniti aspernatur ipsam
-                eaque veniam voluptatem corporis vitae mollitia laborum corrupti
-                ullam rem?
+                Boids are an algorithm that simulate the movement pattern of flocking birds.
+                I decided to take on this project because I was really interested in a
+                <a rel="noreferrer" target="_blank" href="https://www.youtube.com/watch?v=bqtqltqcQhw"
+                ><strong><u>video</u></strong></a> made by Sebastian Lague on boids. Although
+                his approach of the boids algorithm was made in Unity, I decided to make mine
+                a <strong>plugin</strong> in <strong>Unreal Engine 5</strong>.
+              </p>
+            </div>
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Technical Details</h3>
+              <p class="project-details__desc-para">
+                My goal for this project was to be able to handle as many boids as possible.
+                I first analyzed the video's implementation of the algorithm and recognized that
+                the code for updating the boids' positions was slow because it used Unity's
+                equivalent of the Tick() function for every boid. Additionally, the code used
+                an inefficient way of tracking collisions. Although it was deterministic and
+                caused the movement of the boids to be predictable, I believed that a faster
+                and more randomized approach was more desirable for my goals, and the
+                randomness could even make the simulation look better.
               </p>
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem?
+                After analyzing the code and coming up with a plan for my implementation, 
+                I went ahead and created it as a plugin in Unreal Engine 5.
+                My machine can handle <strong>2,000 boids</strong> at <strong>60 FPS</strong>. However, there are still some improvements that can be made.
+                I could use a more efficient spatial partitioning algorithm like an
+                <strong>octree</strong> to further increase the speed of collision detection. Additionally,
+                my implementation has options for <strong>multithreading</strong> because 
+                calculating the position of the boids and setting their positions happen
+                independently from each other.
               </p>
             </div>
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
               <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">React</div>
-                <div class="skills__skill">SASS</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Shopify</div>
-                <div class="skills__skill">Wordpress</div>
-                <div class="skills__skill">Google ADS</div>
-                <div class="skills__skill">Facebook Ads</div>
-                <div class="skills__skill">Android</div>
-                <div class="skills__skill">IOS</div>
+                <div class="skills__skill">Unreal Engine 5</div>
+                <div class="skills__skill">C++</div>
+                <div class="skills__skill">Algorithms</div>
+                <div class="skills__skill">Performance Analysis</div>
               </div>
             </div>
             <div class="project-details__links">
@@ -220,10 +225,7 @@
         </div>
 
         <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
+          &copy; Copyright 2021. Made by Ram Maheshwari
         </div>
       </div>
     </footer>
