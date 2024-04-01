@@ -178,10 +178,22 @@
               </p>
               <h3 class="project-details__content-title">Updates</h3>
               <p class="project-details__desc-para">
-                April 1 Update: I started this project pretty much last weekend, and I'm really happy with it so far.
-                I've implemented true FPS turning (vid 1), weapon sway (vid 2), movement (vid 3), and ADS (vids 4 and 5). The left-hand IK is the next thing I need
-                to set up because it's very noticeable in the demos.
+                <strong>April 1 Update:</strong> I started this project over the weekend, and I'm really happy with it so far.
+                I've implemented networked true FPS turning (vid 1), weapon sway (vid 2), movement (vid 3), and ADS (vids 4 and 5). The left hand IK is the next thing I need
+                to set up because it's very noticeable in the demos. After fixing that and making sure everything is replicated properly, the next big thing is shooting.
               </p>
+              <p class="project-details__desc-para">
+                I'm not entirely happy with the turning in-place, specifically with how the gun moves. It can definitely feel weird when you don't expect it. Without the 
+                turning anim it's actually pretty smooth. However, there's still some jitter when the character's movement component starts using the desired controller rotation
+                (which is how I make the character move during the turn). One way to help this is making sure the camera is placed exactly on the Z-axis of the player so that
+                when the character turns there is no translation of the camera. Probably turning off weapon sway handled by RInterps would also remove the gun jitter. Here's 
+                a vid of the turning without turn animations:
+              </p>
+              <video style="width:100%" controls>
+                <source src="./assets/FPSDemo/turning_less_jitter.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+<!--              <div class="text">Third-person ADS</div>-->
             </div>
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
