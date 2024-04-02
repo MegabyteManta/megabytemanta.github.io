@@ -109,49 +109,58 @@
 
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
-              <div class="numbertext">1 / 5</div>
+              <div class="numbertext">1 / 6</div>
+              <!--<img src="./assets/jpeg/project-mockup-example.jpeg" style="width:100%">-->
+              <video style="width:100%" controls>
+                <source src="./assets/FPSDemo/left_hand_IK.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="text">(April 2) Left hand IK</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 6</div>
               <!--<img src="./assets/jpeg/project-mockup-example.jpeg" style="width:100%">-->
               <video style="width:100%" controls>
                 <source src="./assets/FPSDemo/turning.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
-              <div class="text">Aim offset and turning in-place</div>
+              <div class="text">(April 1) Aim offset and turning in-place</div>
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">2 / 5</div>
+              <div class="numbertext">3 / 6</div>
               <video style="width:100%" controls>
                 <source src="./assets/FPSDemo/gunsway.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
-              <div class="text">Weapon sway</div>
+              <div class="text">(April 1) Weapon sway</div>
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">3 / 5</div>
+              <div class="numbertext">4 / 6</div>
               <video style="width:100%" controls>
                 <source src="./assets/FPSDemo/movement.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
-              <div class="text">Movement</div>
+              <div class="text">(April 1) Movement</div>
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">4 / 5</div>
+              <div class="numbertext">5 / 6</div>
               <video style="width:100%" controls>
                 <source src="./assets/FPSDemo/ADS_FP.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
-              <div class="text">First-person ADS</div>
+              <div class="text">(April 1) First-person ADS</div>
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">5 / 5</div>
+              <div class="numbertext">6 / 6</div>
               <video style="width:100%" controls>
                 <source src="./assets/FPSDemo/ADS_TP.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
-              <div class="text">Third-person ADS</div>
+              <div class="text">(April 1) Third-person ADS</div>
             </div>
 
             <!-- Next and previous buttons -->
@@ -167,6 +176,7 @@
             <span class="dot" onclick="currentSlide(3)"></span>
             <span class="dot" onclick="currentSlide(4)"></span>
             <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
           </div>
           <div class="project-details__content-main">
             <div class="project-details__desc">
@@ -174,9 +184,23 @@
               <p class="project-details__desc-para">
                 I've been wanting to show off some of my skills on my portfolio since the game I'm working on for Crowbar Collective
                 hasn't come out yet. I really like working on player-facing features and making them look good, so I want to make sure
-                I know the fundamentals (like true FPS mechanics) like the back of my hand.
+                I know the fundamentals (like true FPS mechanics) like the back of my hand. Make sure to check the dates on the videos
+                for updates. The April 1 videos don't have the new IK setup.
               </p>
               <h3 class="project-details__content-title">Updates</h3>
+              <p class="project-details__desc-para">
+                <strong>April 2 Update:</strong> I got IK working! It took me a bit of time to figure out how to do it on this specific skeleton. I'm using a skeleton from a 
+                true FPS anims pack, and it has virtual bones for the right and left hand. It's pretty cool because the virtual right hand bone is attached to the head, so
+                that when the play turns their head the hand can turn without translating up or down. 
+              </p>
+              <p class="project-details__desc-para">
+                First I transform the right and left hand bones to account for weapon sway. Next I set up the IK for the hands. 
+              </p>
+              <img src="./assets/FPSDemo/SwayAndIK_ABP.png" style="width:100%">
+              <video style="width:100%" controls>
+                <source src="./assets/FPSDemo/left_hand_IK.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
               <p class="project-details__desc-para">
                 <strong>April 1 Update:</strong> I started this project over the weekend, and I'm really happy with it so far.
                 I've implemented networked true FPS turning (vid 1), weapon sway (vid 2), movement (vid 3), and ADS (vids 4 and 5). The left hand IK is the next thing I need
